@@ -21,7 +21,7 @@ $.fn.drag = function( str, arg, opts ){
 	// were options passed
 	opts = ( str == fn ? arg : opts ) || {};
 	// trigger or bind event handler
-	return fn ? this.bind( type, opts, fn ) : this.trigger( type );
+	return fn ? this.on( type, opts, fn ) : this.trigger( type );
 };
 
 // local refs (increase compression)
